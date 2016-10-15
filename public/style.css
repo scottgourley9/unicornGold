@@ -80,13 +80,13 @@ opacity: .2;
 }
 .videoSection ul {
   line-height: 200%;
-  margin-top: 10px;
+  margin-top: 1vw;
   list-style-type: disc;
-  font-size: 15px;
+  font-size: 1.7vw;
 }
 .buyNow-Explore {
   display: flex;
-  margin-top: 10px;
+  margin-top: 1vw;
   align-items: center;
   color: #009DE2;
 }
@@ -94,8 +94,8 @@ opacity: .2;
   background-color: #009DE2;
   text-align: center;
   color: white;
-  padding: 4px 15px 4px 15px;
-  margin-right: 20px;
+  padding: .4vw 1.5vw .4vw 1.5vw;
+  margin-right: 2vw;
 }
 .fiveBarReview {
   background-color: white;
@@ -116,21 +116,22 @@ opacity: .2;
   margin-top: -2.5vw;
 }
 .fiveBarReview span {
-  font-size: 12px;
+  font-size: 1.2vw;
   font-weight: lighter;
   font-family: sans-serif;
-  margin-top: -10px;
+  margin-top: -1vw;
   color: #FEA500;
   font-weight: lighter;
 }
 .fiveBarReview div {
   line-height: 100%;
   margin-bottom: 1vw;
+  font-size: 2.2vw;
 }
 .fiveBarReview p {
   font-style: italic;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 1.3vw;
 }
 .mohawk {
   background-color: lightgrey;
@@ -143,7 +144,7 @@ opacity: .2;
   z-index: 7;
   margin-top: 11.5vw;
   position: absolute;
-  font-size: 25px;
+  font-size: 2.9vw;
   font-weight: lighter;
 }
 .mohawkSectionIcons {
@@ -166,7 +167,12 @@ opacity: .2;
 }
 .mohawkSectionIcons p{
   margin-top: 2vw;
+  font-size: 1.8vw;
+  line-height: 150%;
+}
 
+.mohawkSectionIcons b{
+  font-size: 1.7vw;
 }
 .mohawkSectionBottom {
   background-color: white;
@@ -187,7 +193,7 @@ opacity: .2;
   height: 20vw;
   text-align: center;
   margin-top: -4.5vw;
-  font-size: 16px;
+  font-size: 2vw;
 }
 .mohawkSectionBottom img {
   width: 8.5vw;
@@ -211,6 +217,10 @@ opacity: .2;
   flex-direction: column;
   align-items: center;
 }
+.scents h3{
+  font-size: 3vw;
+margin-top: 4vw;
+}
 .scents div {
   display: flex;
   width: 100%;
@@ -221,11 +231,12 @@ opacity: .2;
 .scents p {
   margin-left: -5vw;
   margin-top: 2.5vw;
-  font-size: 16px;
+  font-size: 1.9vw;
   font-weight: lighter;
+  line-height: 150%;
 }
 .scents span{
-  font-size: 20px;
+  font-size: 2.3vw;
   border-bottom: 1px solid white;
   padding-bottom: .5vw;
 }
@@ -233,8 +244,9 @@ opacity: .2;
   border: .15vw solid white;
   text-align: center;
   color: white;
-  padding: .3vw 2vw .3vw 2vw;
+  padding: .7vw 2.5vw .7vw 2.5vw;
   margin-top: 2vw;
+  font-size: 2vw;
 }
 .productsCarouselVanilla {
   background: linear-gradient(to bottom, #F5C400, #E4CAAF);
@@ -270,7 +282,7 @@ opacity: .2;
 }
 
 .unicornSuctionSection {
-  overflow: hidden;
+  overflow: hidden !important;
   position: relative;
   height: 38vw;
 }
@@ -288,6 +300,7 @@ opacity: .2;
   position: absolute;
   margin-top: -46.5vw;
   width: 100%;
+  font-size: 2.8vw;
 }
 .colorCircles {
   position: absolute;
@@ -323,7 +336,8 @@ opacity: .2;
   padding: .3vw 2vw .3vw 2vw;
   position: absolute;
   margin-top: -8vw;
-  margin-left: 45vw;
+  margin-left: 44vw;
+  font-size: 2vw;
 }
 
 
@@ -332,14 +346,15 @@ opacity: .2;
   width: 100%;
   background-color: #868c9c;
   opacity: 1;
-  overflow: hidden;
+  overflow: hidden !important;
   color: white;
 
 }
 .battleOdorSection h2 {
   font-weight: lighter;
   text-align: center;
-  margin-bottom: -1.5vw;
+  margin-bottom: -0.5vw;
+    font-size: 3.5vw;
 }
 .ocean {
   background-image: url('images/theOcean4.png');
@@ -348,6 +363,8 @@ opacity: .2;
   position: absolute;
   z-index: 10;
   margin-top: 21vw;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .poopToilet {
   width: 33vw;
@@ -358,14 +375,14 @@ opacity: .2;
 }
 .battleOdorSection div {
   text-align: center;
-  font-size: 17px;
+  font-size: 2.3vw;
 }
 .battleOdorSection p {
   margin-top: 11.5vw;
   margin-left: 18vw;
   position: absolute;
   z-index: 30;
-  font-size: 12px;
+  font-size: 1.5vw;
 }
 
 
@@ -379,7 +396,7 @@ opacity: .2;
   width: 100%;
   text-align: center;
   margin-top: 10vw;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .fiveStarRatingSection img {
   width: 15vw;
@@ -387,10 +404,12 @@ opacity: .2;
 }
 .fiveStarRatingSection > *{
   margin-bottom: 1.5vw;
+  font-size: 2.2vw;
 }
 .fiveStarRatingSection span {
   font-style: italic;
-  font-size: 12px;
+  font-size: 1.3vw;
+  font-weight: bold;
 }
 
 .unicornOnPotSection {
@@ -398,7 +417,7 @@ opacity: .2;
   width: 100%;
   margin-top: 3.5vw;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2.8vw;
 }
 
 .boxCircles {
@@ -486,7 +505,7 @@ opacity: .2;
   background-size: 100%, 100%;
   height: 60vw;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden !important;
   margin-top: -21vw;
   background-blend-mode: darken;
   color: white;
@@ -508,13 +527,14 @@ opacity: .2;
 .rainbowSkySection h3 {
   text-align: center;
   margin-top: 25vw;
-}
-.rainbowSkySection h3 {
+  font-size: 3vw;
   font-weight: lighter;
 }
+
 .rainbowSkySection p {
-  font-size: 1.75vw;
+  font-size: 2vw;
   text-align: center;
+  line-height: 125%;
 }
 .rainbowSkySection img {
   width: 37vw;
@@ -532,6 +552,11 @@ opacity: .2;
 }
 .ounceSelectionSection h3 {
   font-weight: lighter;
+  font-size: 3vw;
+}
+.ounceSelectionSection p {
+  font-weight: lighter;
+  margin-bottom: 1vw;
 }
 .productImages {
   display: flex;
@@ -585,12 +610,21 @@ width: 16vw;
 .greenVineSection span {
   font-weight: lighter;
 }
+.greenVineSection h3 {
+  font-size: 3vw;
+  margin-bottom: 2vw;
+}
+.greenVineSection p {
+  font-size: 2.2vw;
+}
+
 
 .productsInToilet {
   display: flex;
-  height: 30vw;
+  width: 30vw;
   justify-content: center;
-  margin-top: 8vw;
+  margin-top: 21vw;
+  position: absolute;
 }
 .productsInToilet img {
   width: 19vw;
@@ -605,7 +639,8 @@ width: 16vw;
   padding: .8vw 3vw .8vw 3vw;
   font-weight: normal;
   position: absolute;
-  margin-top: 41vw;
+  margin-top: 42vw;
+  font-size: 2vw;
 }
 .fiveStarRatingSectionBottom {
   display: flex;
@@ -614,7 +649,7 @@ width: 16vw;
   height: 25vw !important;
   width: 100%;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden !important;
   margin-top: 5vw;
 }
 .fiveStarRatingSectionBottom img {
@@ -623,9 +658,13 @@ width: 16vw;
 }
 .fiveStarRatingSectionBottom span {
   font-style: italic;
-  font-size: 12px;
+  font-size: 1.2vw;
   margin-top: -1vw;
   margin-bottom: 5vw;
+  font-weight: bold;
+}
+.fiveStarRatingSectionBottom p {
+  font-size: 2.2vw;
 }
 .blueCloud {
   width: 100vw !important;
