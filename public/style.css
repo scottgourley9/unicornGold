@@ -60,6 +60,7 @@ body {
 position: relative;
 width: 100%;
 opacity: .2;
+height: 47vw;
 }
 
 .videoSection {
@@ -67,7 +68,7 @@ opacity: .2;
   height: 20vw;
   position: absolute;
   z-index: 5;
-  margin-top: 19%;
+  margin-top: 17%;
   display: flex;
   justify-content: space-around;
   font-weight: normal;
@@ -79,8 +80,8 @@ opacity: .2;
   border-radius: 5px;
 }
 .videoSection ul {
-  line-height: 200%;
-  margin-top: 1vw;
+  line-height: 190%;
+  /*margin-top: 1vw;*/
   list-style-type: disc;
   font-size: 1.7vw;
 }
@@ -97,19 +98,19 @@ opacity: .2;
   padding: .4vw 1.5vw .4vw 1.5vw;
   margin-right: 2vw;
 }
-.fiveBarReview {
+/*.fiveBarReview {
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vw;
-  position: absolute;
+  height: 16vw;
   z-index: 3;
-  margin-top: 48%;
   text-align: center;
-  padding-top: 3vw;
+  padding-top: 3.5vw;
+  position: absolute;
+  margin-top: -1.5vw;
 }
 .fiveBarReview img {
   width: 15vw;
@@ -132,7 +133,7 @@ opacity: .2;
   font-style: italic;
   font-weight: bold;
   font-size: 1.3vw;
-}
+}*/
 .mohawk {
   background-color: lightgrey;
   width: 100%;
@@ -184,6 +185,8 @@ opacity: .2;
   height: 17vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left:20vw;
+  border: .25vw solid #F6C300;
+  outline: .5vw solid white;
 }
 .mohawkSectionBottomBox {
   display: flex;
@@ -198,6 +201,7 @@ opacity: .2;
 .mohawkSectionBottom img {
   width: 8.5vw;
   margin-top: -.5vw;
+  z-index: 6;
 }
 .boxBuy {
   background-color: #009DE2;
@@ -233,12 +237,12 @@ margin-top: 4vw;
   margin-top: 2.5vw;
   font-size: 1.9vw;
   font-weight: lighter;
-  line-height: 150%;
+  line-height: 120%;
 }
 .scents span{
   font-size: 2.3vw;
   border-bottom: 1px solid white;
-  padding-bottom: .5vw;
+  /*padding-bottom: .5vw;*/
 }
 .scents section {
   border: .15vw solid white;
@@ -247,6 +251,18 @@ margin-top: 4vw;
   padding: .7vw 2.5vw .7vw 2.5vw;
   margin-top: 2vw;
   font-size: 2vw;
+}
+.carousel-indicators li{
+  width: 1.5vw !important;
+  height: 1.5vw !important;
+  border-radius: 100% !important;
+}
+.scentPics {
+  z-index: 10;
+position: absolute;
+width: 17vw !important;
+height: 13vw !important;
+margin: 20vw 31vw;
 }
 .productsCarouselVanilla {
   background: linear-gradient(to bottom, #F5C400, #E4CAAF);
@@ -263,6 +279,7 @@ margin-top: 4vw;
 .productsCarouselTropical {
   background: linear-gradient(to bottom, #009BBE, #C0B2BB);
 }
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
@@ -321,6 +338,7 @@ margin-top: 4vw;
   flex-direction: column;
   align-items: center;
   width: 21vw;
+
 }
 .colorCircles p {
   text-align: center;
@@ -344,11 +362,11 @@ margin-top: 4vw;
 .battleOdorSection {
   height: 42.5vw;
   width: 100%;
-  background-color: #868c9c;
+  background-color: #0094D6;
   opacity: 1;
   overflow: hidden !important;
   color: white;
-
+  /*margin-top: 20vw;*/
 }
 .battleOdorSection h2 {
   font-weight: lighter;
@@ -357,32 +375,54 @@ margin-top: 4vw;
     font-size: 3.5vw;
 }
 .ocean {
-  background-image: url('images/theOcean4.png');
-  height: 15.5vw;
+  background-image: url('images/theOcean6.png');
+  height: 20.5vw;
   width: 100vw;
   position: absolute;
   z-index: 10;
-  margin-top: 21vw;
+  margin-top: 19vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .poopToilet {
-  width: 33vw;
-  margin-top: -4vw;
-  margin-left: 55vw;
+  width: 40vw;
+  height: 50vw;
+  margin-top: -10.2vw;
+  margin-left: 45vw;
   position: absolute;
   z-index: 40;
+}
+.feces {
+  position: absolute;
+  margin: 21.5vw 59vw;
+  z-index: 70;
+  width: 12vw;
 }
 .battleOdorSection div {
   text-align: center;
   font-size: 2.3vw;
 }
 .battleOdorSection p {
-  margin-top: 11.5vw;
+  margin-top: 8.5vw;
   margin-left: 18vw;
   position: absolute;
   z-index: 30;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
+}
+
+.colorBar {
+  height: 8vw;
+  width: 1vw;
+  position: absolute;
+  z-index: 60;
+}
+.yellowBar {
+  background-color: #FFCF00;
+  margin: 9vw 15.5vw;
+}
+.blueBar {
+  background-color: #009DE2;
+  margin: 22.5vw 15.5vw;
 }
 
 
@@ -392,19 +432,18 @@ margin-top: 4vw;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 18vw;
+  height: 20vw;
   width: 100%;
+  position: relative;
   text-align: center;
-  margin-top: 10vw;
+  font-size: 2.2vw;
   overflow: hidden !important;
+  background-color: white;
+  z-index: 50;
 }
 .fiveStarRatingSection img {
   width: 15vw;
-  /*margin-top: 1vw;*/
-}
-.fiveStarRatingSection > *{
-  margin-bottom: 1.5vw;
-  font-size: 2.2vw;
+  margin-bottom: -1.5vw;
 }
 .fiveStarRatingSection span {
   font-style: italic;
@@ -466,6 +505,7 @@ margin-top: 4vw;
   width: 12vw;
   background: #3fd4ef;
   margin: 29vw 74vw;
+  text-align: center;
 }
 .RV {
   height: 7vw;
@@ -650,7 +690,8 @@ width: 16vw;
   width: 100%;
   text-align: center;
   overflow: hidden !important;
-  margin-top: 5vw;
+  margin-top: 2.5vw;
+  font-size: 2.2vw;
 }
 .fiveStarRatingSectionBottom img {
   width: 15vw;
@@ -658,13 +699,9 @@ width: 16vw;
 }
 .fiveStarRatingSectionBottom span {
   font-style: italic;
-  font-size: 1.2vw;
-  margin-top: -1vw;
-  margin-bottom: 5vw;
+  font-size: 1.3vw;
   font-weight: bold;
-}
-.fiveStarRatingSectionBottom p {
-  font-size: 2.2vw;
+  margin-bottom: 5vw;
 }
 .blueCloud {
   width: 100vw !important;
