@@ -1,6 +1,6 @@
+
 body {
-  font-family: sans-serif;
-  font-weight: lighter !important;
+  font-family: 'Open Sans', sans-serif !important;
   color: #3F3F3F;
 }
 .title {
@@ -8,23 +8,35 @@ body {
   z-index: 2;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 1vw;
   color: #d3a70e;
-  font-family: sans-serif;
-  font-weight: lighter;
   font-size: 1.2vw;
-  padding: 0px 8vw;
+  padding: 0px 12.5vw;
+  font-weight: 300;
 }
 .squattyPottyLogo {
   width: 20vw;
   margin-top: -1.8vw;
+  margin-left: -1.3vw;
 }
 .beforeSquat {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 20vw;
+  margin-top: -1vw;
+
+}
+.beforeSquat h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6vw;
+  font-weight: lighter;
+}
+.beforeSquat img {
+  margin:auto;
 }
 .squat {
   width: 16.5vw;
@@ -40,12 +52,24 @@ body {
   align-items: center;
   margin-top: -1.8vw;
 }
+.ham {
+  display: none;
+}
+.manOnPot {
+  display: none;
+}
 .buyNow {
   border: .2vw solid #009DE2;
   text-align: center;
   color: #009DE2;
-  padding: .6vw 1.1vw .6vw 1.1vw;
+  padding: .4vw 1.5vw .4vw 1.5vw;
   margin-left: 2vw;
+}
+.buyNow:hover {
+  border: .2vw solid #009DE2;
+  color: white;
+  background-color: #009DE2;
+  cursor: pointer;
 }
 .cloud {
   position: absolute;
@@ -70,12 +94,13 @@ height: 47vw;
   z-index: 5;
   margin-top: 17%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-weight: normal;
-  padding: 0px 11vw;
+  padding-left: 12.5vw;
+  padding-right: 11vw;
 }
 .videoSection img{
-  width: 41vw;
+  width: 42vw;
   height: 24vw;
   border-radius: 5px;
 }
@@ -85,55 +110,37 @@ height: 47vw;
   list-style-type: disc;
   font-size: 1.7vw;
 }
+.videoSection p {
+  line-height: 125%;
+  font-weight: 700;
+}
+.videoSection li {
+  margin-left: 2vw;
+  font-weight: 300;
+}
 .buyNow-Explore {
   display: flex;
   margin-top: 1vw;
   align-items: center;
   color: #009DE2;
+  margin-left: 2vw;
 }
-.buyNow-Explore div{
+.blueBuyNow {
   background-color: #009DE2;
+  border: .25vw solid #009DE2;
   text-align: center;
   color: white;
-  padding: .4vw 1.5vw .4vw 1.5vw;
+  padding: .4vw 2vw .4vw 2vw;
   margin-right: 2vw;
+  font-size: 1.7vw !important;
+  font-weight: 300;
 }
-/*.fiveBarReview {
+.blueBuyNow:hover {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 16vw;
-  z-index: 3;
-  text-align: center;
-  padding-top: 3.5vw;
-  position: absolute;
-  margin-top: -1.5vw;
+  color: #009DE2;
+  cursor: pointer;
 }
-.fiveBarReview img {
-  width: 15vw;
-  margin-top: -2.5vw;
-}
-.fiveBarReview span {
-  font-size: 1.2vw;
-  font-weight: lighter;
-  font-family: sans-serif;
-  margin-top: -1vw;
-  color: #FEA500;
-  font-weight: lighter;
-}
-.fiveBarReview div {
-  line-height: 100%;
-  margin-bottom: 1vw;
-  font-size: 2.2vw;
-}
-.fiveBarReview p {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1.3vw;
-}*/
+
 .mohawk {
   background-color: lightgrey;
   width: 100%;
@@ -145,8 +152,8 @@ height: 47vw;
   z-index: 7;
   margin-top: 11.5vw;
   position: absolute;
-  font-size: 2.9vw;
-  font-weight: lighter;
+  font-size: 2.5vw;
+  font-weight: 300;
 }
 .mohawkSectionIcons {
   z-index: 8;
@@ -168,12 +175,14 @@ height: 47vw;
 }
 .mohawkSectionIcons p{
   margin-top: 2vw;
-  font-size: 1.8vw;
+  font-size: 1.7vw;
   line-height: 150%;
+  font-weight: 300;
 }
 
 .mohawkSectionIcons b{
   font-size: 1.7vw;
+  font-weight: 400;
 }
 .mohawkSectionBottom {
   background-color: white;
@@ -197,6 +206,7 @@ height: 47vw;
   text-align: center;
   margin-top: -4.5vw;
   font-size: 2vw;
+  font-weight: 300;
 }
 .mohawkSectionBottom img {
   width: 8.5vw;
@@ -205,11 +215,20 @@ height: 47vw;
 }
 .boxBuy {
   background-color: #009DE2;
-  border: .15vw solid #009DE2;
+  border: .25vw solid #009DE2;
   text-align: center;
   color: white;
-  padding: .3vw 2vw .3vw 2vw;
+  padding: .9vw 2vw .9vw 2vw;
+  font-size: 1.7vw !important;
+  font-weight: 300;
 }
+.boxBuy:hover {
+  background-color: white;
+  border: .25vw solid #009DE2;
+  color: #009DE2;
+  cursor: pointer;
+}
+
 .scents {
   width: 100%;
   height: 45vw;
@@ -222,7 +241,7 @@ height: 47vw;
   align-items: center;
 }
 .scents h3{
-  font-size: 3vw;
+  font-size: 2.5vw;
 margin-top: 4vw;
 }
 .scents div {
@@ -234,51 +253,118 @@ margin-top: 4vw;
 }
 .scents p {
   margin-left: -5vw;
-  margin-top: 2.5vw;
-  font-size: 1.9vw;
-  font-weight: lighter;
-  line-height: 120%;
+  margin-top: 1.25vw;
+  font-size: 1.7vw;
+  font-weight: 300;
+  line-height: 150%;
+  width: 50vw;
 }
 .scents span{
-  font-size: 2.3vw;
-  border-bottom: 1px solid white;
-  /*padding-bottom: .5vw;*/
+  font-size: 2vw;
+  border-bottom: 2px solid white;
+  font-weight: 400;
+  padding-bottom: .3vw;
+  line-height: 250%;
 }
 .scents section {
   border: .15vw solid white;
   text-align: center;
   color: white;
-  padding: .7vw 2.5vw .7vw 2.5vw;
+  padding: .9vw 2vw .9vw 2vw;
   margin-top: 2vw;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 .carousel-indicators li{
-  width: 1.5vw !important;
-  height: 1.5vw !important;
-  border-radius: 100% !important;
+  width: 1.2vw !important;
+  height: 1.2vw !important;
+  background: white !important;
 }
+.carousel-indicators .active {
+  width: 1.2vw !important;
+  height: 1.2vw !important;
+  border: none;
+  background-color: #009BBE !important;
+  margin-bottom: .05vw !important;
+}
+
+
+
+
 .scentPics {
   z-index: 10;
 position: absolute;
-width: 17vw !important;
-height: 13vw !important;
-margin: 20vw 31vw;
+margin: 19.5vw 30vw;
+}
+.scentVanilla {
+  width: 15vw !important;
+  height: 15vw !important;
+}
+.scentOrange{
+  width: 13vw !important;
+  height: 13vw !important;
+  margin-top: 21.5vw !important;
+}
+.scentTropical {
+  width: 16vw !important;
+  height: 14vw !important;
+  margin-top: 21.25vw !important;
+}
+.scentForest {
+  width: 15vw !important;
+  height: 18vw !important;
+  margin-top: 16.5vw !important;
+}
+.scentFruity {
+  width: 15vw !important;
+  height: 15vw !important;
+}
+
+.bottleTitle {
+  display: none;
 }
 .productsCarouselVanilla {
   background: linear-gradient(to bottom, #F5C400, #E4CAAF);
 }
+.productsCarouselVanilla section:hover {
+  border: .15vw solid white;
+  background-color: #F5C400;
+  cursor: pointer;
+}
 .productsCarouselCitrus {
   background: linear-gradient(to bottom, #D95700, #ECBC5B);
+}
+.productsCarouselCitrus section:hover {
+  border: .15vw solid white;
+  background-color: #D95700;
+  cursor: pointer;
 }
 .productsCarouselForest {
   background: linear-gradient(to bottom, #1A6B0C, #BBD2A7);
 }
+.productsCarouselForest section:hover {
+  border: .15vw solid white;
+  background-color: #1A6B0C;
+  cursor: pointer;
+}
 .productsCarouselFruity {
   background: linear-gradient(to bottom, #CB075B, #F1BF57);
+}
+.productsCarouselFruity section:hover {
+  border: .15vw solid white;
+  background-color: #CB075B;
+  cursor: pointer;
 }
 .productsCarouselTropical {
   background: linear-gradient(to bottom, #009BBE, #C0B2BB);
 }
+.productsCarouselTropical section:hover {
+  border: .15vw solid white;
+  background-color: #009BBE;
+  cursor: pointer;
+}
+
+
+
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -292,7 +378,7 @@ margin: 20vw 31vw;
 }
 .carousel-inner h3 {
   color: white;
-  font-weight: lighter;
+  font-weight: 300;
   width: 100%;
   text-align: center;
   padding-top: 2vw;
@@ -348,66 +434,76 @@ margin: 20vw 31vw;
 }
 .suctionBuyNow {
   background-color: #009DE2;
-  border: .15vw solid #009DE2;
   text-align: center;
   color: white;
-  padding: .3vw 2vw .3vw 2vw;
+  padding: .9vw 2vw .9vw 2vw;
   position: absolute;
   margin-top: -8vw;
-  margin-left: 44vw;
-  font-size: 2vw;
+  margin-left: 44.4vw;
+  font-size: 1.7vw;
+  border: .25vw solid #009DE2;
+
+}
+.suctionBuyNow:hover {
+  background-color: white;
+  border: .25vw solid #009DE2;
+  color: #009DE2;
+  cursor: pointer;
 }
 
 
 .battleOdorSection {
-  height: 42.5vw;
+  height: 46vw;
   width: 100%;
-  background-color: #0094D6;
+  background-color: #009EDB;
   opacity: 1;
   overflow: hidden !important;
   color: white;
-  /*margin-top: 20vw;*/
 }
+
 .battleOdorSection h2 {
-  font-weight: lighter;
+  font-weight: 300;
   text-align: center;
-  margin-bottom: -0.5vw;
-    font-size: 3.5vw;
+  margin-bottom: .5vw;
+  font-size: 2.5vw;
+  margin-top: 4.5vw;
 }
 .ocean {
-  background-image: url('images/theOcean6.png');
-  height: 20.5vw;
+  background-image: url('images/ug-cutaway-water-bottom-bg.jpg');
+  height: 19vw;
   width: 100vw;
   position: absolute;
   z-index: 10;
-  margin-top: 19vw;
+  margin-top: 19.7vw;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .poopToilet {
-  width: 40vw;
-  height: 50vw;
-  margin-top: -10.2vw;
+  width: 44vw;
+  height: 52vw;
+  margin-top: -11.3vw;
   margin-left: 45vw;
   position: absolute;
   z-index: 40;
 }
 .feces {
   position: absolute;
-  margin: 21.5vw 59vw;
+  margin: 21.5vw 60.7vw;
   z-index: 70;
-  width: 12vw;
+  width: 13vw;
 }
-.battleOdorSection div {
+.battleOdorSection section {
   text-align: center;
-  font-size: 2.3vw;
+  font-size: 1.7vw;
+  font-weight: 300;
 }
 .battleOdorSection p {
   margin-top: 8.5vw;
   margin-left: 18vw;
   position: absolute;
   z-index: 30;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
+  font-weight: 300;
 }
 
 .colorBar {
@@ -436,11 +532,13 @@ margin: 20vw 31vw;
   width: 100%;
   position: relative;
   text-align: center;
-  font-size: 2.2vw;
+  font-size: 1.7vw;
   overflow: hidden !important;
   background-color: white;
   z-index: 50;
+  font-weight: 300;
 }
+
 .fiveStarRatingSection img {
   width: 15vw;
   margin-bottom: -1.5vw;
@@ -448,7 +546,8 @@ margin: 20vw 31vw;
 .fiveStarRatingSection span {
   font-style: italic;
   font-size: 1.3vw;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
 }
 
 .unicornOnPotSection {
@@ -456,7 +555,8 @@ margin: 20vw 31vw;
   width: 100%;
   margin-top: 3.5vw;
   text-align: center;
-  font-size: 2.8vw;
+  font-size: 2.5vw;
+  font-weight: 300;
 }
 
 .boxCircles {
@@ -539,15 +639,13 @@ margin: 20vw 31vw;
 }
 
 .rainbowSkySection {
-  background-image: url('images/rainbow.png'), url('images/sky.png');
-  background-color: white;
+  background-image: url('images/ug-guarantee-bg.jpg');
   background-repeat: no-repeat;
-  background-size: 100%, 100%;
+  background-size: cover;
   height: 60vw;
   width: 100%;
   overflow: hidden !important;
   margin-top: -21vw;
-  background-blend-mode: darken;
   color: white;
 }
 
@@ -558,23 +656,34 @@ margin: 20vw 31vw;
   color: white;
   padding: .8vw 3vw .8vw 3vw;
   position: absolute;
-  font-size: 1.75vw;
+  font-size: 1.7vw;
   margin-top: -11.5vw;
   margin-left: 35vw;
-  font-weight: normal;
+  font-weight: 300;
 }
+.buyNowCircles:hover {
+  background-color: white;
+  border: .15vw solid #009DE2;
+  color: #009DE2;
+  padding: .8vw 3vw .8vw 3vw;
+  font-size: 1.7vw;
+  cursor: pointer;
+}
+
 
 .rainbowSkySection h3 {
   text-align: center;
-  margin-top: 25vw;
-  font-size: 3vw;
-  font-weight: lighter;
+  margin-top: 26vw;
+  font-size: 2.5vw;
+  font-weight: 300;
 }
 
 .rainbowSkySection p {
-  font-size: 2vw;
+  font-size: 1.7vw;
   text-align: center;
   line-height: 125%;
+  font-weight: 300;
+
 }
 .rainbowSkySection img {
   width: 37vw;
@@ -586,21 +695,28 @@ margin: 20vw 31vw;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 50vw;
+  height: 56vw;
   width: 100%;
   background: linear-gradient(to bottom, #Fff, #e1f6fc);
 }
 .ounceSelectionSection h3 {
   font-weight: lighter;
-  font-size: 3vw;
+  font-size: 2.5vw;
+  margin-top: 4vw;
 }
 .ounceSelectionSection p {
   font-weight: lighter;
   margin-bottom: 1vw;
+  font-size: 1vw;
 }
 .productImages {
   display: flex;
 }
+
+.productImagesMobile {
+  display: none;
+}
+
 .eachProduct{
 display: flex;
 flex-direction: column;
@@ -611,7 +727,8 @@ width: 16vw;
 
 .eachProduct h4 {
   font-weight: normal;
-  font-size: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: 300;
 }
 .eachProduct span {
   font-weight: normal;
@@ -627,61 +744,15 @@ width: 16vw;
   font-weight: normal;
   margin: .1vw;
 }
+
+
 .ouncesBox {
   display: flex;
   flex-direction: row !important;
   justify-content: center;
 }
 
-.greenVineSection {
-  background: #00b188;
-  background-image: url('images/vines3.png');
-  background-size: contain;
-  background-blend-mode: multiply;
-  opacity: 1 .3;
-  width: 100%;
-  height: 50vw;
-  color: white;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-.greenVineSection span {
-  font-weight: lighter;
-}
-.greenVineSection h3 {
-  font-size: 3vw;
-  margin-bottom: 2vw;
-}
-.greenVineSection p {
-  font-size: 2.2vw;
-}
 
-
-.productsInToilet {
-  display: flex;
-  width: 30vw;
-  justify-content: center;
-  margin-top: 21vw;
-  position: absolute;
-}
-.productsInToilet img {
-  width: 19vw;
-  height: 19vw;
-  margin: -6vw;
-}
-.getGift {
-  background-color: white;
-  border: .15vw solid #009DE2;
-  text-align: center;
-  color: #009DE2;
-  padding: .8vw 3vw .8vw 3vw;
-  font-weight: normal;
-  position: absolute;
-  margin-top: 42vw;
-  font-size: 2vw;
-}
 .fiveStarRatingSectionBottom {
   display: flex;
   flex-direction: column;
@@ -691,7 +762,8 @@ width: 16vw;
   text-align: center;
   overflow: hidden !important;
   margin-top: 2.5vw;
-  font-size: 2.2vw;
+  font-size: 1.7vw;
+  font-weight: 300;
 }
 .fiveStarRatingSectionBottom img {
   width: 15vw;
@@ -700,9 +772,396 @@ width: 16vw;
 .fiveStarRatingSectionBottom span {
   font-style: italic;
   font-size: 1.3vw;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 5vw;
+  font-family: 'Playfair Display', serif;
 }
 .blueCloud {
   width: 100vw !important;
+}
+
+.footerClickable {
+  font-size: 1vw;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: 20vw;
+  padding-left: 12.5vw;
+  padding-right: 12.5vw;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .ham {
+      width: 10vw;
+      display: inherit;
+    }
+    .manOnPot {
+      width: 10vw;
+      display: inherit;
+    }
+
+    .cloud {
+      height: 72vw;
+      margin-top: -41vw;
+    }
+    .flowers {
+      height: 200vw;
+    }
+    .buyNowSection {
+      display: none;
+    }
+    .squattyPottyLogo {
+      display: none;
+    }
+    .beforeSquat {
+      width: 40vw;
+      align-items: center;
+    }
+    .beforeSquat h4 {
+      font-size: 3.3vw;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      width: 40vw;
+    }
+    .title {
+      justify-content: space-around;
+      padding-left: 3vw;
+      padding-right: 3vw;
+    }
+
+    .videoSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-weight: normal;
+      padding-left: 0vw;
+      padding-right: 0vw;
+      margin-top: 25vw;
+      height: 132vw;
+      padding-top: 3vw;
+    }
+    .videoSection p {
+      display: none;
+    }
+    .videoSection img{
+      width: 94vw;
+      height: 60vw;
+      border-radius: 5px;
+    }
+    .videoSection ul {
+      line-height: 190%;
+      /*margin-top: 1vw;*/
+      list-style-type: disc;
+      font-size: 4vw;
+    }
+
+    .battleOdorSection {
+      display: none;
+    }
+
+    .buyNow-Explore {
+      display: flex;
+      flex-direction: column;
+      margin-top: 9vw;
+      align-items: center;
+      justify-content: space-around;
+      color: #009DE2;
+      margin-left: 0vw;
+    }
+
+    .blueBuyNow {
+      margin-right: 0vw;
+      font-size: 5vw !important;
+    }
+    .fiveStarRatingSection {
+      font-size: 3vw;
+      height: 35vw;
+      width: 96vw;
+      margin-left: 2vw;
+    }
+    .fiveStarRatingSection span {
+      font-size: 2vw;
+    }
+    .fiveStarRatingSection img {
+      width: 25vw;
+    }
+    .firstRating {
+      position: absolute;
+      margin-top: -37vw !important;
+    }
+    .secondRating {
+      display: none;
+    }
+    .mohawk {
+      height: 172vw;
+    }
+    .mohawkSectionTitle {
+      font-size: 4vw;
+    }
+    .mohawkSectionIcons {
+      flex-direction: column;
+      margin-top: 25vw;
+      font-size: 3.5vw !important;
+    }
+    .mohawkSectionBottom {
+      margin-top: 134vw;
+      width: 96vw;
+      margin-left: 2vw;
+      height: 30vw;
+    }
+    .mohawkSectionBottom p {
+      font-size: 3.5vw !important;
+    }
+    .mohawkSectionBottom img {
+      width: 16.5vw;
+      margin-top: 5.5vw;
+    }
+    .mohawkSectionIcons b {
+      font-size: 4vw !important;
+    }
+    .mohawkSectionIcons p {
+      font-size: 3.5vw !important;
+    }
+    .boxBuy {
+      font-size: 5vw !important;
+    }
+
+    .scents {
+      height: 130vw;
+    }
+    .scents h3 {
+      font-size: 6vw;
+    }
+    .scents p {
+      display: none;
+    }
+    .scents div {
+      margin-left: 0vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .scents section {
+      font-size: 5vw;
+      margin-top: 69vw;
+    }
+    .scentPics {
+      display: none;
+    }
+    .carousel-inner img {
+      width: 80vw;
+      height: 80vw;
+    }
+    .bottleTitle {
+      font-size: 4vw;
+      margin-top: -2vw !important;
+      display: block;
+      text-align: center;
+    }
+
+    .carousel-indicators li{
+      width: 3vw !important;
+      height: 3vw !important;
+      background: white !important;
+    }
+    .carousel-indicators .active {
+      width: 3vw !important;
+      height: 3vw !important;
+      border: none;
+      background-color: #009BBE !important;
+      margin-bottom: .05vw !important;
+    }
+    .unicornSuctionSection {
+      height: 130vw;
+    }
+    .unicornSuctionSection img {
+      margin-top: 0vw;
+      height: 130vw;
+    }
+    .unicornSuctionSection h2 {
+      margin-top: -121vw;
+      font-size: 5vw;
+    }
+    .colorCircles {
+      flex-direction: column;
+      height: 100vw;
+      margin-top: -117vw;
+      padding-right: 2vw;
+    }
+    .colorCircles div {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .colorCircles p {
+      width: 100%;
+      font-size: 4vw;
+      text-align: left;
+      padding-left: 3vw;
+    }
+    .colorSplit {
+      display: none;
+    }
+    .eachCircle img {
+      width: 15vw;
+    }
+    .suctionBuyNow {
+      font-size: 5vw;
+      margin-left: 0vw;
+      margin-top: -20vw;
+      margin-left: 37vw;
+    }
+
+    .dookie {
+      height: 218vw;
+    }
+
+    .unicornOnPotSection p {
+      font-size: 5vw;
+      margin-top: 5vw;
+    }
+
+    .buyNowCircles {
+      font-size: 5vw;
+      margin-left: 14vw;
+      margin-top: -18vw;
+    }
+    .boxCircles {
+      font-size: 4.5vw;
+    }
+    .boxCircles {
+      height: 25vw !important;
+      width: 25vw !important;
+      margin: 0vw 0vw;
+      text-align: center;
+      opacity: 1;
+    }
+
+    .Airplane {
+      margin: 20vw 15vw;
+    }
+    .Dorm {
+      margin: 50vw 15vw;
+    }
+    .Holiday {
+      margin: 80vw 15vw;
+    }
+    .Game {
+      margin: 110vw 15vw;
+    }
+    .Job {
+      margin: 140vw 15vw;
+    }
+    .Restaurant {
+      margin: 20vw 60vw;
+    }
+    .RV {
+      margin: 50vw 60vw;
+    }
+    .Hotel {
+      margin: 80vw 60vw;
+    }
+    .In-laws {
+      margin: 110vw 60vw;
+    }
+    .Church {
+      margin: 140vw 60vw;
+    }
+    .Outhouse {
+      margin: 170vw 37.5vw;
+    }
+
+    .rainbowSkySection {
+      height: 100vw;
+    }
+    .rainbowSkySection h3 {
+      font-size: 5vw;
+    }
+    .rainbowSkySection p {
+      font-size: 2.5vw;
+    }
+    .rainbowSkySection img {
+      width: 90vw;
+      margin-top: 5vw;
+      margin-left: 5vw;
+    }
+    .ounceSelectionSection {
+      height: 260vw;
+    }
+
+    .ounceSelectionSection h3 {
+      font-size: 4vw;
+    }
+    .ounceSelectionSection p {
+      font-size: 3vw !important;
+    }
+
+    .productImages {
+      display: none;
+    }
+
+    .productImagesMobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .productImagesMobile h4 {
+      font-size: 4vw;
+    }
+    .productImagesMobile span {
+      font-size: 3vw;
+    }
+    .ounces {
+      font-size: 4vw;
+    }
+    .productPair {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 90vw;
+    }
+    .productPair img {
+      width: 50vw;
+      margin-bottom: -3vw;
+    }
+    .eachProduct {
+      width: 40vw;
+    }
+
+    .fiveStarRatingSectionBottom {
+      font-size: 3vw;
+      height: 50vw !important;
+      width: 100vw;
+      padding-top: 2vw;
+    }
+    .fiveStarRatingSectionBottom span {
+      font-size: 2vw;
+    }
+    .fiveStarRatingSectionBottom img {
+      width: 25vw;
+    }
+    .blueCloud {
+      height: 33vw;
+    }
+    .footerClickable {
+      flex-direction: column;
+      margin-top: 33vw;
+      font-size: 3vw;
+    }
+
+
+
 }
